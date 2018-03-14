@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas</title>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<style>
+		#myCanvas {
+			width:600px;
+			height:400px;
+			border:1px dashed green;
+		}
+	</style>
+</head>
+<body>
+	<!--https://www.w3schools.com/html/html5_canvas.asp-->
+	<canvas id="myCanvas"></canvas>
+	<script>
+		var c = document.getElementById("myCanvas");
+		var ctx = c.getContext("2d");
+		//Draw a line
+		ctx.moveTo(50, 50);
+		ctx.lineTo(350, 350);
+		ctx.stroke();
+		//Draw a circle
+		ctx.beginPath();
+		ctx.arc(20, 20, 50, 0, 2 * Math.PI);
+		ctx.stroke();
+		//Draw a text
+		ctx.font = "15px Verdana";
+		ctx.fillText("La Quốc Thắng", 350, 50);
+		//Draw Linear Gradient
+		var grd = ctx.createLinearGradient(0, 0, 100, 25);
+		grd.addColorStop(0, "red");
+		grd.addColorStop(1, "white");
+		ctx.fillStyle = grd;
+		ctx.fillRect(0, 0, 100, 25);
+	</script>
+</body>
+</html>
