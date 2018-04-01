@@ -22,12 +22,6 @@ html, body {
 		-o-transition: 0.5s all;
 	}
 
-		body a:hover {
-			text-decoration: none;
-		}
-
-
-
 .logo {
 	float: left;
 	width: 30%;
@@ -301,7 +295,7 @@ span.menu {
 	color: #89BE9D;
 	font-size: 2em;
 	font-weight: 600;
-	margin: 0 2em 0;
+	margin: 0;
 	font-family: 'Constantia', serif;
 }
 
@@ -321,12 +315,11 @@ span.menu {
 }
 
 .instructors h6 {
-	color: #555;
-	font-size: 1.1em;
-	margin: 0 1em 0;
-	margin-top: 1em;
-	line-height: 25px;
-	font-weight: 500;
+	color: #89BE9D;
+	font-size: 2em;
+	font-weight: 600;
+	margin: 0 0 1em;
+	text-align: center;
 	font-family: 'Constantia', serif;
 }
 
