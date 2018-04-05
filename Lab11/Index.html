@@ -1,0 +1,136 @@
+﻿<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Logistics Website Template</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+</head>
+<body>
+	<div id="header">
+		<div class="area">
+			<div id="logo">
+				<a href="index.html"><img src="images/logo.png" alt="LOGO" height="86" width="170" /></a>
+			</div>
+			<ul id="navigation">
+				<li class="selected">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#">Blog</a>
+				</li>
+				<li>
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div id="adbox">
+			<div class="area">
+				<ul>
+					<li>
+						<div>
+							<h2><span>LAND</span> TRANSPORT</h2>
+							<p>
+								This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h2><span>Ocean</span> TRANSPORT</h2>
+							<p>
+								This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a>
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<h2><span>Air</span> TRANSPORT</h2>
+							<p>
+								This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="area">
+			<div class="main">
+				<form name="myForm">
+					<h3 align="center">Create an account</h3>
+					<div class="label">
+						<label>Name</label>
+						<label>Email</label>
+						<label>Password</label>
+					</div>
+					<div class="input">
+						<input type="text" name="name" value="" /><span style="color:red;"> *</span><span style="color:red;" id="validateName"></span><br />
+						<input type="email" name="email" value="" /><span style="color:red;"> *</span><span style="color:red;" id="validateEmail"></span><br />
+						<input type="password" name="password" value="" /><span style="color:red;"> *</span><span style="color:red;" id="validatePassword"></span><br />
+						<input type="checkbox" name="agreement" value="" id="chk" /><a href="#" style="display:inline-block;">I agree to the term and conditions</a>
+						<input type="button" name="" value="Register" onclick="validateForm();" />
+					</div>
+					<div id="result"></div>
+				</form>
+				<script>
+					function validateForm()	{
+						var name = document.forms["myForm"]["name"].value;
+						if (name == "") {
+							document.getElementById("validateName").innerHTML = "Tên không được để trống";
+							return;
+						}
+						else if (name.length < 5) {
+							document.getElementById("validateName").innerHTML = "Tên phải chứa ít nhất 5 ký tự";
+						}
+						else {
+							document.getElementById("validateName").innerHTML = "<span style='color:blue;'>OK</span>";
+						}
+
+						var email_regex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+						var email = document.forms["myForm"]["email"].value;
+						if (!email_regex.test(email)) {
+							document.getElementById("validateEmail").innerHTML = "Email không đúng định dạng";
+							return;
+						}
+						else document.getElementById("validateEmail").innerHTML = "<span style='color:blue;'>OK</span>"
+
+						var password_regex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+						var pass = document.forms["myForm"]["email"].value;
+						if (!password_regex.test(pass)) {
+							document.getElementById("validatePassword").innerHTML = "Mật khẩu phải có ít nhất 8 ký tự bao gồm chữ hoa, thường, số và 1 ký tự đặc biệt";
+							return;
+						}
+						else document.getElementById("validatePassword").innerHTML = "<span style='color:blue;'>OK</span>"
+					}
+				</script>
+			</div>
+			<div class="blog">
+				<h2>Recent Blog Post</h2>
+				<div class="frame">
+					<img src="images/checker.jpg" alt="Img" height="216" width="268" />
+				</div>
+				<h3>We Aim Higher</h3>
+				<p>
+					This website template has been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forum</a>.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<span class="divider"></span>
+		<div class="area">
+			<div id="connect">
+				<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a> <a href="http://www.freewebsitetemplates.com/misc/contact/" target="_blank" class="mail"></a> <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a>
+			</div>
+			<p>
+				© 2023 AZ Logistics. All Rights Reserved.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
