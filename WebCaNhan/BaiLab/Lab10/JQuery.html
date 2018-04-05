@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery</title>
+	<script src="Styles/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#hide").click(function () {
+				$("#p0").hide();
+			});
+			$("#show").click(function () {
+				$("#p0").show();
+			});
+			$("#fadein").click(function () {
+				$("#p1").fadeIn();
+				$("#p2").fadeIn("slow");
+			});
+			$("#fadeout").click(function () {
+				$("#p1").fadeOut();
+				$("#p2").fadeOut("slow");
+			});
+		});
+	</script>
+</head>
+<body>
+	<p id="p0">Nội dung sẽ ẩn/ hiện</p><br />
+	<p id="p1">
+		Trong đầm gì đẹp bằng sen<br />
+		Lá xanh bông trắng lại chen nhị vàng
+	</p><br />
+	<p id="p2">
+		Nhị vàng bông trắng lá xanh<br />
+		Gần bùn mà chẳng hôi tanh mùi bùn.
+	</p><br />
+
+	<button id="hide">Ẩn</button>
+	<button id="show">Hiện</button>
+	<button id="fadein">Fade in</button>
+	<button id="fadeout">Fade out</button>
+</body>
+</html>

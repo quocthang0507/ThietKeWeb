@@ -24,8 +24,17 @@
 			$().UItoTop({ easingType: 'easeOutQuart' });
 		});
 	</script>
+	<script type="text/javascript">
+		var titleText = document.title;
+		function titleMarquee() {
+
+			titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+			document.title = titleText;
+			setTimeout("titleMarquee()", 450);
+		}
+	</script>
 </head>
-<body>
+<body onload="titleMarquee()">
 	<script src="Javascript/snow.js"></script>
 	<style>
 		.snowflake {
@@ -46,10 +55,10 @@
 			<div class="top-nav">
 				<span class="menu"><img src="../images/menu.png" alt=""></span>
 				<ul class="nav1">
-					<li class="hvr-sweep-to-bottom"><a href="index.html">Trang chủ</a></li>
-					<li class="hvr-sweep-to-bottom"><a href="about.html">Giới thiệu</a></li>
-					<li class="hvr-sweep-to-bottom active"><a href="BaiLab/Index.html">Bài lab</a></li>
-					<li class="hvr-sweep-to-bottom"><a href="Other/Index.html">Thư viện</a></li>
+					<li class="hvr-sweep-to-bottom"><a href="../index.html">Trang chủ</a></li>
+					<li class="hvr-sweep-to-bottom"><a href="../about.html">Giới thiệu</a></li>
+					<li class="hvr-sweep-to-bottom active"><a href="#">Bài lab</a></li>
+					<li class="hvr-sweep-to-bottom"><a href="../Other/Index.html">Thư viện</a></li>
 					<div class="clearfix"> </div>
 				</ul>
 				<!-- script-for-menu -->
@@ -73,26 +82,27 @@
 				<div class="inst-top">
 					<ul style="list-style:none;">
 						<li><a href="Lab1/Hello.html" target="_blank"><h5>Lab 1</h5></a></li>
-						<li><h5>Lab 2</h5></li>
+						<li><a href="Lab2/Index.html" target="_blank"><h5>Lab 2</h5></a></li>
 						<li><a href="Lab2/Index.html" target="_blank"><h6>Index</h6></a></li>
 						<li><a href="Lab2/E-learning.html" target="_blank"><h6>Elearning</h6></a></li>
 						<li><a href="Lab2/ITCenter.html" target="_blank"><h6>ITCenter</h6></a></li>
-						<li><h5>Lab 3</h5></li>
-						<li><a href="Lab3/HTML5.html" target="_blank"><h6>HTML5</h6></a></li>
+						<li><a href="Lab3/Index.html" target="_blank"><h5>Lab 3</h5></a></li>
 						<li><a href="Lab3/Index.html" target="_blank"><h6>Index</h6></a></li>
-						<li><h5>Lab 4</h5></li>
+						<li><a href="Lab3/HTML5.html" target="_blank"><h6>HTML5</h6></a></li>
+						<li><a href="Lab4/Login.html" target="_blank"><h5>Lab 4</h5></a></li>
 						<li><a href="Lab4/Login.html" target="_blank"><h6>Login</h6></a></li>
 						<li><a href="Lab4/Suggestion.html" target="_blank"><h6>Suggestion</h6></a></li>
-						<li><a href="#"><h5>Lab 5</h5></a></li>
-						<li><h5>Lab 5</h5></li>
+						<li><a href="Lab5/Canvas.html" target="_blank"><h5>Lab 5</h5></a></li>
 						<li><a href="Lab5/Canvas.html" target="_blank"><h6>Canvas</h6></a></li>
 						<li><a href="Lab5/Multimedia.html" target="_blank"><h6>Multimedia</h6></a></li>
 						<li><a href="Lab5/SVG.html" target="_blank"><h6>SVG</h6></a></li>
-						<li><a href="Lab6//Index.html" target="_blank"><h5>Lab 6</h5></a></li>
+						<li><a href="Lab6/Index.html" target="_blank"><h5>Lab 6</h5></a></li>
 						<li><a href="Lab7/Index.html" target="_blank"><h5>Lab 7</h5></a></li>
 						<li><a href="Lab8/Index.html" target="_blank"><h5>Lab 8</h5></a></li>
 						<li><a href="Lab9/Index.html" target="_blank"><h5>Lab 9</h5></a></li>
-						<li><a href="#"><h5>Lab 10</h5></a></li>
+						<li><a href="Lab10/Index.html" target="_blank"><h5>Lab 10</h5></a></li>
+						<li><a href="Lab10/Index.html" target="_blank"><h6>Index</h6></a></li>
+						<li><a href="Lab10/JQuery.html" target="_blank"><h6>JQuery</h6></a></li>
 						<li><a href="#"><h5>Lab 11</h5></a></li>
 						<li><a href="#"><h5>Lab 12</h5></a></li>
 					</ul>
@@ -113,7 +123,6 @@
 			</div>
 		</div>
 		<div class="clearfix"></div>
-	</div>
 	</div>
 	<!-- footer -->
 	<div class="footer">

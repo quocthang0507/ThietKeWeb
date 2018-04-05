@@ -12,7 +12,13 @@ p {
 
 html, body {
 	font-family: Constantia;
-	background-color: aliceblue;
+	/*background-color: aliceblue;*/
+	background: url(../images/background.jpg);
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 	body a {
@@ -21,6 +27,12 @@ html, body {
 		-moz-transition: 0.5s all;
 		-o-transition: 0.5s all;
 	}
+
+		body a:hover {
+			text-decoration: none;
+		}
+
+
 
 .logo {
 	float: left;
@@ -295,7 +307,7 @@ span.menu {
 	color: #89BE9D;
 	font-size: 2em;
 	font-weight: 600;
-	margin: 0;
+	margin: 0 2em 0;
 	font-family: 'Constantia', serif;
 }
 
@@ -315,11 +327,12 @@ span.menu {
 }
 
 .instructors h6 {
-	color: #89BE9D;
-	font-size: 2em;
-	font-weight: 600;
-	margin: 0 0 1em;
-	text-align: center;
+	color: #555;
+	font-size: 1.1em;
+	margin: 0 1em 0;
+	margin-top: 1em;
+	line-height: 25px;
+	font-weight: 500;
 	font-family: 'Constantia', serif;
 }
 

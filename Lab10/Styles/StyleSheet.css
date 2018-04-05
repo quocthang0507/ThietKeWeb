@@ -1,0 +1,35 @@
+﻿body {
+	font-family: Verdana;
+	font-size: 14px;
+}
+
+div .main{
+	width:600px;
+	height:400px;
+	padding-left:200px;
+}
+
+form h3 {
+	font-size:14px;
+	margin: 0 5em 0;
+}
+
+form label {
+	font-size:13px;
+	line-height:25px;
+}
+
+form .txb {
+	height:25px;
+	width:200px;
+	margin-top:5px;
+}
+
+span {
+	color:red;
+}
+
+form .btn {
+	height:20px;
+	margin:10px 10px 0 40px;
+}

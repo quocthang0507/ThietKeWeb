@@ -12,7 +12,12 @@ p {
 
 html, body {
 	font-family: Constantia;
-	background-color: aliceblue;
+	background: url(../images/background.jpg);
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 	body a {
@@ -111,7 +116,7 @@ span.menu {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: aquamarine;
+		background-color: aliceblue;
 		-webkit-transform: scaleY(0);
 		-o-transform: scaleY(0);
 		-moz-transform: scaleY(0);
@@ -155,7 +160,7 @@ span.menu {
 }
 
 	.have li a:hover {
-		color: #89BE9D;
+		color: cornflowerblue;
 	}
 
 .have li {
@@ -175,7 +180,7 @@ span.menu {
 	}
 
 .have h3 {
-	color: #89BE9D;
+	color: cornflowerblue;
 	font-size: 2em;
 	font-weight: 600;
 	margin: 0 0 2em;
@@ -187,7 +192,7 @@ span.menu {
 	font-size: 1.7em;
 	font-weight: 600;
 	margin: 0 0 1em;
-	color: #89BE9D;
+	color: cornflowerblue;
 	font-family: 'Constantia', serif;
 }
 
@@ -217,7 +222,7 @@ span.menu {
 	font-size: 1.7em;
 	font-weight: 600;
 	margin: 1em 0;
-	color: #89BE9D;
+	color: cornflowerblue;
 	font-family: 'Constantia', serif;
 }
 
@@ -248,7 +253,7 @@ span.menu {
 }
 
 .instructors h4 {
-	color: #89BE9D;
+	color: cornflowerblue;
 	font-size: 1.5em;
 	font-weight: 600;
 	margin: 0;
@@ -298,7 +303,7 @@ span.menu {
 }
 
 .instructors h3 {
-	color: #89BE9D;
+	color: cornflowerblue;
 	font-size: 2em;
 	font-weight: 600;
 	margin: 0 2em 0;
@@ -308,9 +313,18 @@ span.menu {
 .instructors h5 {
 	color: #555;
 	font-size: 1.4em;
-	margin: 1em 0 0;
+	margin: 0.5em 0 0;
 	font-weight: 600;
 	font-family: 'Constantia', serif;
+}
+
+.instructors .detail h4 {
+	display: inline-block;
+}
+
+.instructors .detail h5 {
+	display: inline-block;
+	padding: 4px 7px 5px 4px;
 }
 
 .sructs li {
@@ -404,36 +418,6 @@ i.insta {
 		background: url(../images/social.png)no-repeat -123px -4px;
 	}
 
-.footer form input[type="text"] {
-	width: 100%;
-	color: #898888;
-	outline: none;
-	font-size: 1em;
-	padding: .5em;
-	border: 1px solid #eee;
-	-webkit-appearance: none;
-}
-
-.footer form input[type="submit"] {
-	background: #71c6c1;
-	padding: .5em 1em;
-	color: #fff;
-	font-size: 14px;
-	font-weight: 400;
-	display: block;
-	outline: none;
-	border: none;
-	width: 100%;
-}
-
-	.footer form input[type="submit"]:hover {
-		background-color: #39E7DD;
-	}
-
-.button {
-	float: right;
-	margin: 1em 0;
-}
 
 .footer p {
 	font-size: 0.9em;
@@ -532,7 +516,6 @@ i.insta {
 	-webkit-transition: all 0.3s ease-out 0.5s;
 	-moz-transition: all 0.3s ease-out 0.5s;
 	-o-transition: all 0.3s ease-out 0.5s;
-	-ms-transition: all 0.3s ease-out 0.5s;
 	transition: all 0.3s ease-out 0.5s;
 }
 
@@ -545,7 +528,6 @@ i.insta {
 	-webkit-transition: all 0.2s ease-in-out 0.1s;
 	-moz-transition: all 0.2s ease-in-out 0.1s;
 	-o-transition: all 0.2s ease-in-out 0.1s;
-	-ms-transition: all 0.2s ease-in-out 0.1s;
 	transition: all 0.2s ease-in-out 0.1s;
 }
 
@@ -559,7 +541,6 @@ i.insta {
 	-webkit-transition: all 0.2s ease-in-out 0.2s;
 	-moz-transition: all 0.2s ease-in-out 0.2s;
 	-o-transition: all 0.2s ease-in-out 0.2s;
-	-ms-transition: all 0.2s ease-in-out 0.2s;
 	transition: all 0.2s ease-in-out 0.2s;
 }
 
@@ -572,7 +553,6 @@ i.insta {
 	-webkit-transition: all 0.2s ease-in-out 0.3s;
 	-moz-transition: all 0.2s ease-in-out 0.3s;
 	-o-transition: all 0.2s ease-in-out 0.3s;
-	-ms-transition: all 0.2s ease-in-out 0.3s;
 	transition: all 0.2s ease-in-out 0.3s;
 }
 
@@ -584,11 +564,9 @@ i.insta {
 	-webkit-transition-delay: 0s;
 	-moz-transition-delay: 0s;
 	-o-transition-delay: 0s;
-	-ms-transition-delay: 0s;
 	transition-delay: 0s;
 	-webkit-animation: bounceY 0.9s linear;
 	-moz-animation: bounceY 0.9s linear;
-	-ms-animation: bounceY 0.9s linear;
 	animation: bounceY 0.9s linear;
 }
 
@@ -601,7 +579,6 @@ i.insta {
 	-webkit-transition-delay: 0.4s;
 	-moz-transition-delay: 0.4s;
 	-o-transition-delay: 0.4s;
-	-ms-transition-delay: 0.4s;
 	transition-delay: 0.4s;
 }
 
@@ -614,7 +591,6 @@ i.insta {
 	-webkit-transition-delay: 0.2s;
 	-moz-transition-delay: 0.2s;
 	-o-transition-delay: 0.2s;
-	-ms-transition-delay: 0.2s;
 	transition-delay: 0.2s;
 }
 
@@ -627,7 +603,6 @@ i.insta {
 	-webkit-transition-delay: 0s;
 	-moz-transition-delay: 0s;
 	-o-transition-delay: 0s;
-	-ms-transition-delay: 0s;
 	transition-delay: 0s;
 }
 
@@ -786,7 +761,6 @@ i.insta {
 	-webkit-transition: all 0.3s ease-out 0.5s;
 	-moz-transition: all 0.3s ease-out 0.5s;
 	-o-transition: all 0.3s ease-out 0.5s;
-	-ms-transition: all 0.3s ease-out 0.5s;
 	transition: all 0.3s ease-out 0.5s;
 }
 
@@ -799,7 +773,6 @@ i.insta {
 	-webkit-transition: all 0.2s ease-in-out 0.1s;
 	-moz-transition: all 0.2s ease-in-out 0.1s;
 	-o-transition: all 0.2s ease-in-out 0.1s;
-	-ms-transition: all 0.2s ease-in-out 0.1s;
 	transition: all 0.2s ease-in-out 0.1s;
 }
 
@@ -813,7 +786,6 @@ i.insta {
 	-webkit-transition: all 0.2s ease-in-out 0.2s;
 	-moz-transition: all 0.2s ease-in-out 0.2s;
 	-o-transition: all 0.2s ease-in-out 0.2s;
-	-ms-transition: all 0.2s ease-in-out 0.2s;
 	transition: all 0.2s ease-in-out 0.2s;
 }
 
@@ -826,7 +798,6 @@ i.insta {
 	-webkit-transition: all 0.2s ease-in-out 0.3s;
 	-moz-transition: all 0.2s ease-in-out 0.3s;
 	-o-transition: all 0.2s ease-in-out 0.3s;
-	-ms-transition: all 0.2s ease-in-out 0.3s;
 	transition: all 0.2s ease-in-out 0.3s;
 }
 
@@ -838,11 +809,9 @@ i.insta {
 	-webkit-transition-delay: 0s;
 	-moz-transition-delay: 0s;
 	-o-transition-delay: 0s;
-	-ms-transition-delay: 0s;
 	transition-delay: 0s;
 	-webkit-animation: bounceY 0.9s linear;
 	-moz-animation: bounceY 0.9s linear;
-	-ms-animation: bounceY 0.9s linear;
 	animation: bounceY 0.9s linear;
 }
 
@@ -855,7 +824,6 @@ i.insta {
 	-webkit-transition-delay: 0.4s;
 	-moz-transition-delay: 0.4s;
 	-o-transition-delay: 0.4s;
-	-ms-transition-delay: 0.4s;
 	transition-delay: 0.4s;
 }
 
@@ -868,7 +836,6 @@ i.insta {
 	-webkit-transition-delay: 0.2s;
 	-moz-transition-delay: 0.2s;
 	-o-transition-delay: 0.2s;
-	-ms-transition-delay: 0.2s;
 	transition-delay: 0.2s;
 }
 
@@ -881,7 +848,6 @@ i.insta {
 	-webkit-transition-delay: 0s;
 	-moz-transition-delay: 0s;
 	-o-transition-delay: 0s;
-	-ms-transition-delay: 0s;
 	transition-delay: 0s;
 }
 
@@ -972,422 +938,7 @@ i.insta {
 	padding: 0;
 	border: 1px solid #fff;
 }
-/*-- about --*/
-.about-left img {
-	width: 100%;
-}
 
-.about h2 {
-	color: #a7cbb4;
-	font-size: 2.5em;
-	font-weight: 600;
-	margin: 0 0 1.5em;
-	font-family: 'Constantia', serif;
-	text-align: center;
-}
-
-.about h3 {
-	color: #a7cbb4;
-	font-size: 2em;
-	font-weight: 600;
-	margin: 0;
-	font-family: 'Constantia', serif;
-}
-
-.about h4 {
-	color: #a7cbb4;
-	font-size: 2em;
-	font-weight: 600;
-	margin: 0;
-	font-family: 'Constantia', serif;
-}
-
-.about p {
-	font-size: 0.9em;
-	color: #999;
-	line-height: 1.9em;
-	margin: 1em 0;
-}
-
-.about-bottom li {
-	float: left;
-	display: inline-block;
-	width: 23%;
-	margin: 1%;
-}
-
-.about-middle {
-	padding: 3em 0;
-}
-
-.about-bottom ul {
-	padding: 0;
-}
-
-.about-bottom ul {
-	padding: 0;
-	margin: 3em 0 0;
-}
-
-.about {
-	padding: 3em 0;
-}
-
-.about-middle li a span {
-	width: 16px;
-	height: 16px;
-	display: inline-block;
-	background: url(../images/rigt-ar.png) no-repeat 0px 0px;
-	margin-right: 0.5em;
-	vertical-align: middle;
-}
-
-.about-middle li a {
-	text-decoration: none;
-	color: #a7cbb4;
-	vertical-align: middle;
-	font-size: 0.9em;
-	line-height: 2em;
-}
-
-	.about-middle li a:hover {
-		color: #999;
-	}
-
-.about-middle li {
-	display: inline-block;
-	width: 100%;
-}
-
-.about-middle ul {
-	padding: 0;
-}
-/*-- lessons --*/
-.lessons-bottom li a span {
-	width: 16px;
-	height: 16px;
-	display: inline-block;
-	background: url(../images/rigt-ar.png) no-repeat 0px 0px;
-	margin-right: 0.5em;
-	vertical-align: middle;
-}
-
-.lessons-bottom li a {
-	text-decoration: none;
-	color: #a7cbb4;
-	vertical-align: middle;
-	font-size: 0.9em;
-	line-height: 2em;
-}
-
-	.lessons-bottom li a:hover {
-		color: #999;
-	}
-
-.lessons-bottom li {
-	display: inline-block;
-	width: 100%;
-}
-
-.lessons-bottom ul {
-	padding: 0;
-	margin: 1.5em 0;
-}
-
-.lessons h3 {
-	color: #89BE9D;
-	font-size: 2em;
-	font-weight: 600;
-	margin: 0;
-	font-family: 'Constantia', serif;
-}
-
-.lessons p {
-	font-size: 0.9em;
-	color: #999;
-	line-height: 1.9em;
-	margin: 1em 0;
-}
-
-.lessons-middle {
-	padding: 3em 0;
-}
-
-.lessons {
-	padding: 3em 0;
-}
-
-.lessons-left img {
-	width: 100%;
-}
-
-.lessons h2 {
-	color: #a7cbb4;
-	font-size: 2.5em;
-	font-weight: 600;
-	margin: 0 0 1.5em;
-	font-family: 'Constantia', serif;
-	text-align: center;
-}
-/*-- contact --*/
-.contact h2 {
-	color: #a7cbb4;
-	font-size: 2.5em;
-	font-weight: 600;
-	margin: 0 0 1.5em;
-	font-family: 'Constantia', serif;
-	text-align: center;
-}
-
-.contact h3 {
-	color: #89BE9D;
-	font-size: 2em;
-	font-weight: 600;
-	margin: 1.5em 0;
-	font-family: 'Constantia', serif;
-}
-
-.contact h4 {
-	color: #89BE9D;
-	font-size: 1.7em;
-	font-weight: 600;
-	margin: 1em 0;
-	font-family: 'Constantia', serif;
-}
-
-.contact p {
-	font-size: 0.9em;
-	color: #999;
-	line-height: 1.9em;
-	margin: 0;
-}
-
-	.contact p a {
-		color: #999;
-		text-decoration: none;
-	}
-
-		.contact p a:hover {
-			color: #89BE9D;
-		}
-
-.contact {
-	padding: 3em 0;
-}
-
-.con-left {
-	padding: 2em 0 0;
-}
-
-.form_details input[type="text"], .form_details textarea {
-	padding: 11px;
-	width: 90%;
-	font-size: 1em;
-	margin: 0px 0px 20px;
-	border: 1px solid #bbb;
-	color: #bbb;
-	background: none;
-	-webkit-appearance: none;
-	float: left;
-	outline: none;
-}
-
-.form_details textarea {
-	height: 353px;
-	resize: none;
-	width: 100%;
-}
-
-.form_details input[type="submit"] {
-	margin-top: 1em;
-	color: #fff;
-	font-size: 1.2em;
-	padding: 0.7em 1em;
-	-webkit-appearance: none;
-	display: inline-block;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
-	font-weight: 400;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	width: 30%;
-	background: #a7cbb4;
-}
-
-	.form_details input[type="submit"]:hover {
-		background: #71c6c1;
-	}
-
-#toTop {
-	display: none;
-	text-decoration: none;
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-	overflow: hidden;
-	width: 48px;
-	height: 48px;
-	border: none;
-	text-indent: 100%;
-	background: url(../images/arrow.1.png) no-repeat 0px 0px;
-}
-
-	#toTop:hover {
-		outline: none;
-	}
-
-.about-bottom img {
-	width: 100%;
-}
-/*-- responsive-mediaquries --*/
-@media(max-width:1024px) {
-	.top-nav ul li {
-		width: 25%;
-	}
-
-	.logo {
-		width: 34%;
-	}
-
-	.top-nav {
-		width: 36%;
-	}
-
-	.header {
-		margin: 0 0 2em;
-	}
-
-	.contact h2 {
-		font-size: 2.3em;
-		margin: 0 0 0.5em;
-	}
-
-	.contact h3 {
-		font-size: 1.8em;
-		margin: 1em 0;
-	}
-
-	.form_details input[type="submit"] {
-		width: 34%;
-	}
-
-	.contact h4 {
-		font-size: 1.6em;
-	}
-
-	.lessons h2 {
-		font-size: 2.3em;
-	}
-
-	.lessons h3 {
-		font-size: 1.8em;
-	}
-
-	.about h2 {
-		font-size: 2.3em;
-	}
-
-	.about h3 {
-		font-size: 1.7em;
-	}
-
-	.about h4 {
-		font-size: 1.7em;
-	}
-
-	.view {
-		width: 234px;
-		height: 244px;
-	}
-
-		.view .mask, .view .content {
-			padding: 5em 0;
-			width: 234px;
-			height: 244px;
-		}
-
-	.view1 {
-		width: 468px;
-		height: 244px;
-	}
-
-		.view1 .mask, .view1 .content {
-			width: 468px;
-			height: 244px;
-			padding: 5em 0;
-		}
-
-	.instructors h3 {
-		font-size: 1.7em;
-	}
-
-	.instructors h5 {
-		font-size: 1.2em;
-		margin: 0.5em 0 0;
-	}
-
-	.instructors p {
-		margin: 0.5em 0 0;
-	}
-
-	.ins-lef {
-		float: left;
-		width: 35%;
-	}
-
-	.ins-righ {
-		float: right;
-		width: 60%;
-	}
-
-	.instructors h4 {
-		font-size: 1.4em;
-	}
-
-	.instructors h6 {
-		font-size: 1.7em;
-		margin: 0 0 0.5em;
-	}
-
-	.training {
-		margin: 0 0 3em;
-	}
-
-	.instructors {
-		padding: 3em 0;
-	}
-
-	.footer {
-		padding: 2em 0;
-	}
-
-	.have {
-		padding: 3em 0;
-	}
-
-		.have h3 {
-			font-size: 1.7em;
-			margin: 0 0 1.5em;
-		}
-
-		.have h4 {
-			font-size: 1.4em;
-		}
-
-	.feature-top h4 {
-		font-size: 1.4em;
-	}
-
-	.feature-top {
-		padding: 3em 0;
-		text-align: center;
-	}
-}
-/*-- responsive-mediaquries --*/
 @media(max-width:768px) {
 	span.menu {
 		display: block;
@@ -1436,755 +987,4 @@ i.insta {
 		.top-nav ul li a {
 			padding: 1em 0;
 		}
-
-	.contact {
-		padding: 1em 0;
-	}
-
-	.form_details textarea {
-		height: 200px;
-	}
-
-	.form_details input[type="submit"] {
-		width: 24%;
-		margin-top: 0.5em;
-	}
-
-	.soci {
-		float: left;
-		width: 33.33%;
-	}
-
-	.footer-left {
-		width: 33.33%;
-		float: left;
-	}
-
-	.lessons {
-		padding: 1em 0;
-	}
-
-	.lessons-bottom li {
-		display: inline-block;
-		width: 100%;
-	}
-
-	.about h2 {
-		margin: 0 0 0.5em;
-	}
-
-	.about-right {
-		margin: 1em 0;
-	}
-
-	.about-middle {
-		padding: 1em 0;
-	}
-
-	.ab-rgt {
-		margin: 1em 0;
-	}
-
-	.about-middle li {
-		width: 100%;
-	}
-
-	.about-bottom ul {
-		padding: 0;
-		margin: 2em 0 0;
-	}
-
-	.about {
-		padding: 1em 0;
-	}
-
-	.container {
-		width: 721px;
-		padding-right: 0px;
-		padding-left: 0px;
-	}
-
-	.bann-left {
-		float: left;
-		width: 27%;
-	}
-
-	.bann-right {
-		float: left;
-		width: 46%;
-	}
-
-	.view1 .mask, .view1 .content {
-		width: 347px;
-		height: 196px;
-		padding: 3em 0;
-	}
-
-	.view .mask, .view .content {
-		padding: 3em 0;
-		width: 188px;
-		height: 196px;
-	}
-
-	.view {
-		width: 188px;
-		height: 196px;
-	}
-
-	.view1 {
-		width: 373px;
-		height: 196px;
-	}
-
-	.instructors h3 {
-		font-size: 1.5em;
-	}
-
-	.instru-left {
-		padding: 1em 0.5em;
-		float: left;
-		width: 30%;
-	}
-
-	.instru-right {
-		float: right;
-		width: 70%;
-	}
-
-	.inst-top {
-		padding: 1em 0em;
-	}
-
-	.inst-top1 {
-		padding: 1em 0em;
-	}
-
-	.inst-top2 {
-		padding: 1em 0em;
-	}
-
-	.instructors h4 {
-		font-size: 1.2em;
-	}
-
-	.instructors h5 {
-		font-size: 1.1em;
-		margin: 0.5em 0 0;
-	}
-
-	.have {
-		padding: 2em 0;
-	}
-
-	.instructors h6 {
-		font-size: 1.5em;
-		margin: 0 0 1.1em;
-	}
-
-	.have h3 {
-		font-size: 1.5em;
-		margin: 0 0 1.5em;
-	}
-
-	.have h4 {
-		font-size: 1.3em;
-	}
-
-	.have-middle {
-		float: left;
-		width: 33.33%;
-	}
-
-	.have-left {
-		float: left;
-		width: 33.33%;
-	}
-
-	.service-left {
-		float: left;
-		width: 46%;
-	}
-
-	.feature-top {
-		padding: 2em 0;
-		text-align: center;
-	}
-
-	.bann-left {
-		float: left;
-		width: 26%;
-	}
-
-	.bann-right {
-		float: left;
-		width: 48%;
-	}
-
-	.logo img {
-		width: 32%;
-	}
-
-	.logo {
-		width: 47%;
-		margin: 0;
-	}
-
-	.b-search {
-		float: right;
-		width: 30%;
-		margin: 0.55em 0;
-	}
-
-	.top-nav {
-		float: left;
-		margin: 14px 0;
-	}
-
-	.header {
-		margin: 0 0 1em;
-		padding: 2em 0;
-	}
-
-	.lessons-middle {
-		padding: 2em 0 0.5em;
-	}
-
-	.footer {
-		padding: 2em 0;
-	}
-
-	.training {
-		margin: 0 0 2em;
-	}
-}
-/*-- responsive-mediaquries --*/
-@media(max-width:640px) {
-	.form_details input[type="submit"] {
-		width: 26%;
-	}
-
-	.soci li {
-		margin: 0 0.1em;
-	}
-
-	.footer h3 {
-		font-size: 1.5em;
-	}
-
-	.container {
-		width: 592px;
-	}
-
-	.view {
-		width: 154px;
-		height: 152px;
-	}
-
-		.view .mask, .view .content {
-			padding: 1em 0;
-			width: 154px;
-			height: 152px;
-		}
-
-	.view1 {
-		width: 291px;
-		height: 152px;
-	}
-
-		.view1 .mask, .view1 .content {
-			width: 285px;
-			height: 152px;
-			padding: 1em 0;
-		}
-
-	.instructors h3 {
-		font-size: 1.4em;
-	}
-
-	.instructors h4 {
-		font-size: 1.1em;
-	}
-
-	.top-nav {
-		margin: 11px 0;
-	}
-}
-/*-- responsive-mediaquries --*/
-@media(max-width:480px) {
-	.contact h2 {
-		font-size: 2em;
-		margin: 0 0 0.5em;
-	}
-
-	.contact h3 {
-		font-size: 1.5em;
-		margin: 1em 0;
-	}
-
-	.contact h4 {
-		font-size: 1.4em;
-		margin: 0.5em 0;
-	}
-
-	.form_details input[type="submit"] {
-		width: 31%;
-		margin-top: 0.5em;
-		font-size: 1em;
-	}
-
-	.soci {
-		float: none;
-		width: 100%;
-	}
-
-	.footer-left {
-		width: 100%;
-		float: none;
-		margin: 1em 0;
-	}
-
-	.footer {
-		padding: 2em 0 0;
-	}
-
-	.lessons h2 {
-		font-size: 2em;
-		margin: 0 0 0.5em;
-	}
-
-	.lessons-middle {
-		padding: 2em 0;
-	}
-
-	.lessons h3 {
-		font-size: 1.5em;
-	}
-
-	.about h2 {
-		font-size: 2em;
-	}
-
-	.about h3 {
-		font-size: 1.5em;
-	}
-
-	.about h4 {
-		font-size: 1.5em;
-	}
-
-	.container {
-		width: 433px;
-	}
-
-	.view {
-		width: 113px;
-		height: 117px;
-	}
-
-		.view .mask, .view .content {
-			padding: 1em 0;
-			width: 113px;
-			height: 117px;
-		}
-
-	.view1 {
-		width: 225px;
-		height: 117px;
-	}
-
-		.view1 .mask, .view1 .content {
-			width: 207px;
-			height: 117px;
-		}
-
-	.instru-left {
-		float: none;
-		width: 100%;
-	}
-
-	.tra-left {
-		float: none;
-		width: 100%;
-	}
-
-	.tra-left {
-		float: none;
-		width: 60%;
-		margin: 1em auto;
-	}
-
-	.tra-right {
-		float: none;
-		width: 100%;
-	}
-
-	.tra-right {
-		float: none;
-		width: 100%;
-		text-align: center;
-	}
-
-	.instru-right {
-		float: right;
-		width: 100%;
-		padding: 0;
-	}
-
-	.training {
-		margin: 0 0 1.5em;
-	}
-
-	.instructors {
-		padding: 1em 0;
-	}
-
-	.have h3 {
-		font-size: 1.5em;
-		margin: 0 0 1em;
-	}
-
-	.have-left {
-		float: none;
-		width: 100%;
-	}
-
-	.have-middle {
-		float: none;
-		width: 80%;
-		margin: 1em auto;
-	}
-
-	.feature-top h4 {
-		font-size: 1.2em;
-	}
-
-	.logo img {
-		width: 36%;
-	}
-
-	.b-search {
-		width: 39%;
-		margin: 0;
-	}
-
-	.top-nav {
-		margin: 3px 0;
-	}
-
-		.top-nav ul li a {
-			padding: 0.8em 0;
-		}
-
-	.view h2 {
-		font-size: 13px;
-		padding: 10px 0 0;
-	}
-
-	.view p {
-		font-size: 11px;
-		padding: 5px 0px 0px;
-	}
-
-	.view1 h2 {
-		font-size: 13px;
-		padding: 10px 0 0;
-	}
-
-	.view1 p {
-		font-size: 11px;
-		padding: 5px 0px 0px;
-	}
-
-	.service-left {
-		float: left;
-		width: 100%;
-		padding: 0;
-	}
-
-	.about-bottom li {
-		width: 48%;
-	}
-
-	.instru-left {
-		padding: 1em 3.5em;
-	}
-}
-/*-- responsive-mediaquries --*/
-@media(max-width:320px) {
-	.contact h2 {
-		font-size: 1.7em;
-		margin: 0 0 0.5em;
-	}
-
-	.contact h3 {
-		font-size: 1.4em;
-		margin: 0.8em 0;
-	}
-
-	.contact-left {
-		padding: 0;
-		margin: 1em 0;
-	}
-
-	.contact-right {
-		padding: 0;
-	}
-
-	.form_details input[type="text"], .form_details textarea {
-		padding: 8px;
-		width: 100%;
-		font-size: 1em;
-		margin: 0px 0px 10px;
-	}
-
-	.contact-left iframe {
-		height: 151px;
-	}
-
-	.con-left {
-		padding: 1em 0 0;
-	}
-
-	.form_details input[type="submit"] {
-		width: 40%;
-		margin-top: 0.5em;
-		font-size: 0.9em;
-	}
-
-	.form_details textarea {
-		height: 150px;
-	}
-
-	.footer h3 {
-		font-size: 1.4em;
-	}
-
-	.footer p {
-		font-size: 0.875em;
-	}
-
-	.soci {
-		padding: 0;
-	}
-
-	.footer-left {
-		padding: 0;
-	}
-
-	.lessons h2 {
-		font-size: 1.7em;
-	}
-
-	.lessons h3 {
-		font-size: 1.4em;
-	}
-
-	.lessons p {
-		font-size: 0.875em;
-	}
-
-	.lessons-right {
-		padding: 0;
-	}
-
-	.lessons-left {
-		padding: 0;
-	}
-
-	.ab-lft {
-		padding: 0;
-	}
-
-	.ab-lft {
-		padding: 0;
-	}
-
-	.lessons-middle {
-		padding: 2em 0 0;
-	}
-
-	.lessons-bottom li a {
-		font-size: 0.875em;
-		line-height: 1.8em;
-	}
-
-	.lessons-bottom ul {
-		padding: 0;
-		margin: 0.8em 0;
-	}
-
-	.about h2 {
-		font-size: 1.7em;
-	}
-
-	.about h3 {
-		font-size: 1.4em;
-	}
-
-	.about h2 {
-		font-size: 1.7em;
-	}
-
-	.about h3 {
-		font-size: 1.4em;
-	}
-
-	.about p {
-		font-size: 0.875em;
-	}
-
-	.about-left {
-		padding: 0;
-	}
-
-	.about-right {
-		margin: 1em 0 0;
-		padding: 0;
-	}
-
-	.about-middle li a {
-		font-size: 0.875em;
-	}
-
-	.ab-rgt {
-		margin: 1em 0;
-		padding: 0;
-	}
-
-	.ab-rgt {
-		margin: 1em 0;
-		padding: 0;
-	}
-
-	.container {
-		width: 275px;
-	}
-
-	.view {
-		width: 72px;
-		height: 76px;
-	}
-
-		.view .mask, .view .content {
-			padding: 1em 0;
-			width: 72px;
-			height: 76px;
-			padding: 0.5em 0 0;
-		}
-
-	.view1 {
-		width: 144px;
-		height: 76px;
-	}
-
-		.view1 .mask, .view1 .content {
-			width: 136px;
-			height: 76px;
-			padding: 0;
-		}
-
-	.instructors p {
-		font-size: 0.875em;
-		margin: 0.5em 0 0;
-	}
-
-	.have h3 {
-		font-size: 1.4em;
-		margin: 0 0 1em;
-	}
-
-	.instructors h6 {
-		font-size: 1.4em;
-		margin: 0 0 0.5em;
-	}
-
-	.have h4 {
-		font-size: 1.2em;
-		margin: 0;
-	}
-
-	.have p {
-		font-size: 0.875em;
-	}
-
-	.have-left {
-		padding: 0;
-	}
-
-	.have li a {
-		font-size: 0.875em;
-	}
-
-	.have ul {
-		padding: 1em 0 0;
-	}
-
-	.feature-top p {
-		font-size: 0.875em;
-	}
-
-	.feature-top h4 {
-		margin: 1em 0 0;
-	}
-
-	.feature-top {
-		padding: 1em 0;
-	}
-
-	.logo img {
-		width: 53%;
-	}
-
-	.b-search {
-		width: 49%;
-		margin: 0.1em 0;
-		display: none;
-	}
-
-	.top-nav {
-		margin: 0px 0;
-		float: right;
-		width: 7%;
-	}
-
-		.top-nav ul {
-			top: 11%;
-		}
-
-	.header {
-		margin: 0 0 0em;
-		padding: 1.5em 0;
-	}
-
-	.top-nav ul li a {
-		padding: 0.5em 0;
-	}
-
-	.view h2 {
-		font-size: 10px;
-		padding: 0px 0 0;
-	}
-
-	.view p {
-		font-size: 8px;
-		padding: 3px 0px 0px;
-	}
-
-	.view1 h2 {
-		font-size: 10px;
-		padding: 0 0 0;
-	}
-
-	.view1 p {
-		font-size: 8px;
-		padding: 3px 0px 0px;
-	}
-
-	.contact p {
-		font-size: 0.875em;
-	}
-
-	.instru-left {
-		padding: 1em 0.5em;
-	}
 }
