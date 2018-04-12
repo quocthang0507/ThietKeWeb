@@ -1,16 +1,19 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-	<title>Bài lab : Chào mừng bạn đến với trang Web</title>
+	<title> * Bài lab : Chào mừng bạn đến với trang Web * </title>
 	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 	<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/bootstrap.min.css" rel="stylesheet" />
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/snow.js"></script>
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript" src="../js/move-top.js"></script>
+	<script type="text/javascript" src="../js/easing.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -33,9 +36,9 @@
 			setTimeout("titleMarquee()", 450);
 		}
 	</script>
+	<link rel="shortcut icon" type="image/x-icon" href="../images/avatar.ico" />
 </head>
 <body onload="titleMarquee()">
-	<script src="Javascript/snow.js"></script>
 	<style>
 		.snowflake {
 			position: fixed;
@@ -58,7 +61,7 @@
 					<li class="hvr-sweep-to-bottom"><a href="../index.html">Trang chủ</a></li>
 					<li class="hvr-sweep-to-bottom"><a href="../about.html">Giới thiệu</a></li>
 					<li class="hvr-sweep-to-bottom active"><a href="#">Bài lab</a></li>
-					<li class="hvr-sweep-to-bottom"><a href="../Other/Index.html">Thư viện</a></li>
+					<li class="hvr-sweep-to-bottom"><a href="../Other/Index.html">Giải trí<</a></li>
 					<div class="clearfix"> </div>
 				</ul>
 				<!-- script-for-menu -->
@@ -110,16 +113,69 @@
 				</div>
 			</div>
 			<div class="col-md-8 instru-right">
-				<div class="training">
-					<img src="../images/thiet-ke-webiste.png" class="img-reponsive" style="width:600px;" alt="" />
-				</div>
-				<div class="view1 view-eighth">
-					<img src="../images/tkw.png" class="img-reponsive" alt="" />
-					<div class="mask">
-						<h2>Bài lab thực hành</h2>
-						<p>của La Quốc Thắng</p>
+				<img src="../images/thiet-ke-webiste.png" class="img-reponsive" style="position:absolute; top:940px; width:50%;" alt="" />
+				<div class="container">
+					<div id="myCarousel" class="carouselslide" data-ride="carousel" style="height:170px;">
+						<!-- Indicators -->
+						<ol class="carousel-indicators" style="padding-top:150px;">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+							<li data-target="#myCarousel" data-slide-to="4"></li>
+							<li data-target="#myCarousel" data-slide-to="5"></li>
+							<li data-target="#myCarousel" data-slide-to="6"></li>
+						</ol>
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="../images/tkw.png" alt="" style="height:170px;">
+								<div class="carousel-caption">
+									<h3>Thiết kế web</h3>
+								</div>
+							</div>
+							<div class="item">
+								<img src="../images/tkw2.png" alt="" style="height:170px;">
+								<div class="carousel-caption">
+									<h3>Thiết kế web</h3>
+								</div>
+							</div>
+							<div class="item">
+								<img src="../images/tkw3.png" alt="" style="height:170px;">
+								<div class="carousel-caption">
+									<h3>Thiết kế web</h3>
+								</div>
+							</div>
+							<div class="item">
+								<img src="../images/tkw4.png" alt="" style="height:170px;">
+								<div class="carousel-caption">
+									<h3>Thiết kế web</h3>
+								</div>
+							</div>
+							<div class="item">
+								<img src="../images/tkw5.png" alt="" style="height:170px;">
+								<div class="carousel-caption">
+									<h3>Thiết kế web</h3>
+								</div>
+							</div>
+							<div class="item">
+								<img src="../images/tkw6.png" alt="" style="height:170px;">
+								<div class="carousel-caption">
+									<h3>Thiết kế web</h3>
+								</div>
+							</div>
+							<div class="item">
+								<img src="../images/tkw7.jpg" alt="" style="height:170px;">
+								<div class="carousel-caption">
+									<h3>Thiết kế web</h3>
+								</div>
+							</div>
+
+						</div>
+						<!-- Left and right controls -->
 					</div>
 				</div>
+
 			</div>
 		</div>
 		<div class="clearfix"></div>
@@ -145,7 +201,7 @@
 			</div>
 		</div>
 	</div>
-	<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 0;"></span> <span id="toTopHover" style="opacity: 0;"> </span></a>
 	<!-- footer -->
+	<a href="#" id="toTop" style="display:block;"><span id="toTopHover" style="opacity:0;"></span><span id="toTopHover" style="opacity:0;"></span></a>
 </body>
 </html>

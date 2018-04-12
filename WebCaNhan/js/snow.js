@@ -10,7 +10,7 @@ var browserWidth;
 var browserHeight;
 
 // specify the number of snowflakes you want visible
-var numberOfSnowflakes = 25;
+var numberOfSnowflakes = 15;
 
 //
 // listen for "DOMContentLoaded", "resize", and "focus" events and handle them

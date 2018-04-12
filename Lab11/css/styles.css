@@ -297,6 +297,20 @@ p {
 			height: 20px;
 			width: 150px;
 		}
+
+		.main form .input #chk {
+			display: inline;
+			margin: 10px 5px 0 0;
+			height: 20px;
+			width: auto;
+		}
+
+			.main form .input #chk label {
+				display: inline;
+				font-size:12px;
+			}
+
+
 /** blog **/
 .blog {
 	float: right;
